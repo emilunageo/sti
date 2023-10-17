@@ -46,3 +46,32 @@ const formValidation = () => {
 }
 
 formValidation()
+
+const languageSelect = () => {
+    const languageInnner = document.querySelector('.header-list__lang');
+    const languages = document.querySelectorAll('.header-lang');
+    languageInnner.addEventListener('click', (event) => {
+        if (event.target.classList.contains('header-lang') && event.target.classList.contains('header-lang__active')) {
+            languages.forEach((lang) => {
+                lang.classList.remove('header-lang__active');
+                lang.classList.add('lang-visible');
+            })
+        }
+    })
+    languages.forEach((lang, index) => {
+        lang.addEventListener('click', () => {
+            lang.classList.add('header-lang__active');
+            languages.forEach((otherLang, otherIndex) => {
+                if (index === otherIndex) {
+                    lang.classList.add('header-lang__active');
+                    otherLang.classList.add('lang-visible');
+                } else {
+                    otherLang.classList.remove('header-lang__active');
+                    otherLang.classList.remove('lang-visible');
+                }
+            });
+        });
+    });
+}
+
+languageSelect()
