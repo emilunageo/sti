@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -7,9 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Outfit:wght@300;400;500;700;800&family=Poppins&display=swap"
-          rel="stylesheet">
-    <title>STI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Outfit:wght@300;400;500;700;800&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon-light.png" type="image/x-icon">
+    <title>STI | Conectamos fornteras acercamos negoios</title>
     <script defer src="js/main.js"></script>
 </head>
 <body>
@@ -22,6 +22,9 @@
             </a>
             <img src="images/menu.svg" alt="menu-image" class="header-menuImg">
             <nav class="header-nav">
+                <li class="header-nav__list">
+                    <a href="#" class="header-nav__link">Inicio</a>
+                </li>
                 <li class="header-nav__list">
                     <a href="#servicios" class="header-nav__link">Servicios</a>
                 </li>
@@ -37,7 +40,7 @@
                 <li class="header-nav__list">
                     <a href="#contacto" class="header-nav__link">Contacto</a>
                 </li>
-                <li class="header-nav__list header-list__lang">
+                <!-- <li class="header-nav__list header-list__lang">
                     <div class="header-lang__inner">
                         <div class="header-lang header-lang__active">
                             <img src="images/en.png" alt="">
@@ -52,9 +55,9 @@
                             <span>IT</span>
                         </div>
                     </div>
-                </li>
+                </li> -->
                 <li class="header-nav__list">
-                    <a href="#" class="header-btn">Cotizar Servicio</a>
+                    <a href="#contacto" class="header-btn">Cotizar Servicio</a>
                 </li>
             </nav>
         </div>
@@ -65,7 +68,7 @@
     <div class="top-inner">
         <h1 class="top-title">Soluciones Logísticas Nacionales e Internacionales Eficientes.</h1>
         <p class="top-text">Desbloquea nuevas oportunidades comerciales a nivel global.</p>
-        <a href="#" class="top-btn">CONTÁCTANOS</a>
+        <a href="#contacto" class="top-btn">CONTÁCTANOS</a>
     </div>
 </section>
 
@@ -264,7 +267,7 @@
         <div class="consultation-items">
             <h4 class="consultation-title">¡Agenda una Asesoría Completamente Gratis!</h4>
             <p class="consultation-text">Analicemos tú estrategia logística.</p>
-            <a href="#" class="consultation-btn">Agendar Asesoría</a>
+            <a href="#contacto" class="consultation-btn">Agendar Asesoría</a>
         </div>
     </div>
 </section>
@@ -290,9 +293,9 @@
                     <img src="images/arrow.svg" alt="">
                 </div>
                 <div class="accordion-content">
-                    Para optimizar costos, considera consolidar envíos, utilizar rutas eficientes y aprovechar acuerdos
-                    comerciales preferenciales cuando sea posible. Contáctanos y planea tu cadena de suministro o envío
-                    eficientemente con nosotros.
+                    Para minimizar riesgos, considere el uso de seguros de carga, embalaje adecuado y selección de transportistas 
+                    confiables con historiales de seguridad sólidos. En STI estamos comprometidos con la seguridad de su carga, 
+                    contáctenos y descubra las diferentes formas que tenemos de asegurar su carga.
                 </div>
             </div>
             <div class="accordion-item">
@@ -301,9 +304,8 @@
                     <img src="images/arrow.svg" alt="">
                 </div>
                 <div class="accordion-content">
-                    Para optimizar costos, considera consolidar envíos, utilizar rutas eficientes y aprovechar acuerdos
-                    comerciales preferenciales cuando sea posible. Contáctanos y planea tu cadena de suministro o envío
-                    eficientemente con nosotros.
+                    Las implicaciones fiscales pueden variar según el país y tipo de producto. Consultar con un experto en impuestos 
+                    y aduanas es esencial para una planificación adecuada. Recuerde que podemos asesorarle en el tema.
                 </div>
             </div>
             <div class="accordion-item">
@@ -312,9 +314,8 @@
                     <img src="images/arrow.svg" alt="">
                 </div>
                 <div class="accordion-content">
-                    Para optimizar costos, considera consolidar envíos, utilizar rutas eficientes y aprovechar acuerdos
-                    comerciales preferenciales cuando sea posible. Contáctanos y planea tu cadena de suministro o envío
-                    eficientemente con nosotros.
+                    Los documentos varían según el tipo de mercancía, pero en general, necesitará la factura comercial, lista de empaque, 
+                    conocimiento de embarque y documentos de identificación.
                 </div>
             </div>
             <div class="accordion-item">
@@ -323,9 +324,8 @@
                     <img src="images/arrow.svg" alt="">
                 </div>
                 <div class="accordion-content">
-                    Para optimizar costos, considera consolidar envíos, utilizar rutas eficientes y aprovechar acuerdos
-                    comerciales preferenciales cuando sea posible. Contáctanos y planea tu cadena de suministro o envío
-                    eficientemente con nosotros.
+                    Un servicio 4PL cómo el que ofrecemos puede optimizar su cadena de suministro al gestionar y coordinar a múltiples 
+                    proveedores logísticos para una mayor eficiencia y visibilidad.
                 </div>
             </div>
         </div>
@@ -364,7 +364,12 @@
                 <label for="" class="contact-label__select contact-label">
                     <select name="" id="">
                         <option value="">Cargo dentro de la empresa</option>
-                        <option value="">Cargo dentro de la empresa 2</option>
+                        <option value="">Directivo</option>
+                        <option value="">Gerencial</option>
+                        <option value="">Ventas</option>
+                        <option value="">Logística</option>
+                        <option value="">Operaciones</option>
+                        <option value="">Otro</option>
                     </select>
                 </label>
                 <label for="" class="contact-label">
@@ -399,10 +404,12 @@
                     en superar sus expectativas. Permítenos ser tu socio estratégico en el comercio internacional.
                     ¡Contáctanos hoy mismo y descubre cómo podemos ayudarte a alcanzar tus metas comerciales!
                 </p>
-                <div class="footer-info__wp">
-                    <img src="images/wp.png" alt="">
-                    <span>¿Dudas? Mandanos UN Whatsapp</span>
-                </div>
+                <a href="https://wa.me/524422333491?text=Hola%20mi%20nombre%20es:%me%contacto%desde%su%sitio%web.">
+                    <div class="footer-info__wp">
+                        <img src="images/wp.png" alt="">
+                        <span>¿Dudas? Mandanos UN Whatsapp</span>
+                    </div>
+                </a>
             </div>
 
             <div class="footer-items">
@@ -412,37 +419,37 @@
                         <a href="#" class="footer-item__link">Inicio</a>
                     </li>
                     <li class="footer-item__list">
-                        <a href="#" class="footer-item__link">Servicios</a>
+                        <a href="#servicios" class="footer-item__link">Servicios</a>
                     </li>
                     <li class="footer-item__list">
-                        <a href="#" class="footer-item__link">Acerca de</a>
+                        <a href="#acerca" class="footer-item__link">Acerca de</a>
                     </li>
                     <li class="footer-item__list">
-                        <a href="#" class="footer-item__link">Preguntas Frecuentes</a>
+                        <a href="#preguntas" class="footer-item__link">Preguntas Frecuentes</a>
                     </li>
                     <li class="footer-item__list">
-                        <a href="#" class="footer-item__link">Contacto</a>
+                        <a href="#contacto" class="footer-item__link">Contacto</a>
                     </li>
                 </div>
                 <div class="footer-item">
                     <p class="footer-item__title">Servicos</p>
                     <li class="footer-item__list">
-                        <a href="#" class="footer-item__link">
+                        <a href="#servicios" class="footer-item__link">
                             Logística
                         </a>
                     </li>
                     <li class="footer-item__list">
-                        <a href="#" class="footer-item__link">
+                        <a href="#servicios" class="footer-item__link">
                             Despacho Aduanal
                         </a>
                     </li>
                     <li class="footer-item__list">
-                        <a href="#" class="footer-item__link">
+                        <a href="#servicios" class="footer-item__link">
                             Asesoría y Planeación
                         </a>
                     </li>
                     <li class="footer-item__list">
-                        <a href="#" class="footer-item__link">
+                        <a href="#servicios" class="footer-item__link">
                             Freight Forwarder
                         </a>
                     </li>
