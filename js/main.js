@@ -6,6 +6,12 @@ const navMenuMobile = function () {
         navList.classList.toggle('header-nav__active');
         body.classList.toggle('stop-scroll');
     })
+    navList.addEventListener('click', (event) => {
+        if (event.target.classList.contains('header-nav__link')) {
+            navList.classList.remove('header-nav__active');
+            body.classList.remove('stop-scroll');
+        }
+    })
 }
 navMenuMobile()
 
