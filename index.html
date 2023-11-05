@@ -38,7 +38,7 @@
                     <a href="#preguntas" class="header-nav__link">Preguntas Frecuentes</a>
                 </li>
                 <li class="header-nav__list">
-                    <a href="#contacto" class="header-nav__link">Contacto</a>
+                    <a href="https://wa.me/524422333491?text=Hola%20mi%20nombre%20es:%me%contacto%desde%su%sitio%web." class="header-nav__link">Contacto</a>
                 </li>
                 <!-- <li class="header-nav__list header-list__lang">
                     <div class="header-lang__inner">
@@ -57,7 +57,7 @@
                     </div>
                 </li> -->
                 <li class="header-nav__list">
-                    <a href="#contacto" class="header-btn">Cotizar Servicio</a>
+                    <a href="https://wa.me/524422333491?text=Hola%20mi%20nombre%20es:%me%contacto%desde%su%sitio%web." class="header-btn">Cotizar Servicio</a>
                 </li>
             </nav>
         </div>
@@ -68,7 +68,7 @@
     <div class="top-inner">
         <h1 class="top-title">Soluciones Logísticas Nacionales e Internacionales Eficientes.</h1>
         <p class="top-text">Desbloquea nuevas oportunidades comerciales a nivel global.</p>
-        <a href="#contacto" class="top-btn">CONTÁCTANOS</a>
+        <a href="https://wa.me/524422333491?text=Hola%20mi%20nombre%20es:%me%contacto%desde%su%sitio%web." class="top-btn">CONTÁCTANOS</a>
     </div>
 </section>
 
@@ -141,7 +141,7 @@
             <p class="middle-items__text">
                 ¡Contáctanos hoy mismo y descubre cómo podemos ayudarte a alcanzar tus metas comerciales!
             </p>
-            <a href="#contacto" class="middle-items__link">CONTÁCTANOS</a>
+            <a href="https://wa.me/524422333491?text=Hola%20mi%20nombre%20es:%me%contacto%desde%su%sitio%web." class="middle-items__link">CONTÁCTANOS</a>
         </div>
     </div>
 </section>
@@ -267,7 +267,7 @@
         <div class="consultation-items">
             <h4 class="consultation-title">¡Agenda una Asesoría Completamente Gratis!</h4>
             <p class="consultation-text">Analicemos tú estrategia logística.</p>
-            <a href="#contacto" class="consultation-btn">Agendar Asesoría</a>
+            <a href="https://wa.me/524422333491?text=Hola%20mi%20nombre%20es:%me%contacto%desde%su%sitio%web." class="consultation-btn">Agendar Asesoría</a>
         </div>
     </div>
 </section>
@@ -332,7 +332,7 @@
     </div>
 </section>
 
-<section id="contacto" class="contact">
+<!-- <section id="contacto" class="contact">
     <div class="container">
         <div class="contact-inner">
             <h5 class="contact-title">Contacto</h5>
@@ -340,54 +340,52 @@
                 Si tienes interés en cualquiera de nuestros servicios o tienes alguna consulta, no
                 dudes en ponerte en contacto con nosotros.
             </p>
-            <form action="" class="contact-form">
+            <form id="contact-form" class="contact-form">
                 <div class="contact-form__short">
-                    <label for="" class="contact-label">
-                        <input type="text" class="contact-input contact-input__short" placeholder="Nombre(s):">
+                    <label for="nombre" class="contact-label">
+                        <input type="text" id="nombre" class="contact-input contact-input__short" placeholder="Nombre(s):" required>
                     </label>
-                    <label for="" class="contact-label">
-                        <input type="text" class="contact-input contact-input__short" placeholder="Apellido(s):">
+                    <label for="apellido" class="contact-label">
+                        <input type="text" id="apellido" class="contact-input contact-input__short" placeholder="Apellido(s):" required>
                     </label>
                 </div>
                 <div class="contact-form__short">
-                    <label for="" class="contact-label">
-                        <input type="email" class="contact-input contact-input__short"
-                               placeholder="Correo Electrónico:">
+                    <label for="correo" class="contact-label">
+                        <input type="email" id="correo" class="contact-input contact-input__short" placeholder="Correo Electrónico:" required>
                     </label>
-                    <label for="" class="contact-label">
-                        <input type="text" class="contact-input contact-input__short" placeholder="Teléfono:">
+                    <label for="telefono" class="contact-label">
+                        <input type="text" id="telefono" class="contact-input contact-input__short" placeholder="Teléfono:" required>
                     </label>
                 </div>
-                <label for="" class="contact-label">
-                    <input type="text" class="contact-input contact-input__long" placeholder="Nombre de la empresa:">
+                <label for="empresa" class="contact-label">
+                    <input type="text" id="empresa" class="contact-input contact-input__long" placeholder="Nombre de la empresa:" required>
                 </label>
-                <label for="" class="contact-label__select contact-label">
-                    <select name="" id="">
+                <label for="cargo" class="contact-label__select contact-label">
+                    <select id="cargo" required>
                         <option value="">Cargo dentro de la empresa</option>
-                        <option value="">Directivo</option>
-                        <option value="">Gerencial</option>
-                        <option value="">Ventas</option>
-                        <option value="">Logística</option>
-                        <option value="">Operaciones</option>
-                        <option value="">Otro</option>
+                        <option value="Directivo">Directivo</option>
+                        <option value="Gerencia">Gerencia</option>
+                        <option value="Ventas">Ventas</option>
+                        <option value="Logistica">Logística</option>
+                        <option value="Operaciones">Operaciones</option>
+                        <option value="Otro">Otro</option>
                     </select>
                 </label>
-                <label for="" class="contact-label">
-                    <textarea name="" id="" cols="30" rows="10" class="contact-label__textarea"
-                              placeholder="Mensaje:"></textarea>
+                <label for="mensaje" class="contact-label">
+                    <textarea id="mensaje" cols="30" rows="10" class="contact-label__textarea" placeholder="Mensaje:" required></textarea>
                 </label>
                 <label class="contact-label__checkbox contact-label checkbox-container">
-                    <input type="checkbox"  class="contact-input__checkbox">
+                    <input type="checkbox" id="aceptar" class="contact-input__checkbox" required>
                     <span class="checkmark"></span>
                     <span class="contact-label__checkbox-first">Aceptar Aviso de Privacidad y Términos y Condiciones</span>
                     <span class="contact-label__checkbox-span">Acepto Términos y Condiciones.</span>
                 </label>
-                <button class="contact-btn">Enviar</button>
+                <button id="contact-btn" type="submit" class="contact-btn">Enviar</button>
             </form>
         </div>
     </div>
     <div class="contact-mobile__img"></div>
-</section>
+</section> -->
 
 <footer class="footer">
     <div class="container">
@@ -428,7 +426,7 @@
                         <a href="#preguntas" class="footer-item__link">Preguntas Frecuentes</a>
                     </li>
                     <li class="footer-item__list">
-                        <a href="#contacto" class="footer-item__link">Contacto</a>
+                        <a href="https://wa.me/524422333491?text=Hola%20mi%20nombre%20es:%me%contacto%desde%su%sitio%web." class="footer-item__link">Contacto</a>
                     </li>
                 </div>
                 <div class="footer-item">
